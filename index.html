@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shiva - Interactive Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="cursor"></div>
+    <div id="cursor-blur"></div>
+
+    <header>
+        <nav>
+            <div class="logo">Shiva</div>
+            <ul>
+                <li><a href="/index.html" class="nav-link">Home</a></li>
+                <li><a href="/about.html" class="nav-link">About</a></li>
+                <li><a href="/skills.html" class="nav-link">Skills</a></li>
+                <li><a href="/projects.htm" class="nav-link">Projects</a></li>
+                <li><a href="/contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <i class="fas fa-moon"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1 class="glitch" data-text="I'm Shiva">I'm Shiva</h1>
+                <p class="typewriter">Web Developer & Designer</p>
+                <a href="/contact.html" class="cta-button">Get in Touch</a>
+            </div>
+           <!-- <div class="hero-image">
+              <img src="your-image.jpg" alt="Shiva">
+            </div>-->
+            <div class="scroll-indicator">
+                <div class="mouse"></div>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a passionate web developer and designer with a keen eye for detail and a love for creating beautiful, functional websites. With 8 years of experience.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat">
+                        <span class="stat-number" data-target="5">0</span>
+                        <span class="stat-label">Projects Completed</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-target="1">0</span>
+                        <span class="stat-label">Happy Clients</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-target="8">0</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-container">
+                <div class="skill-item" data-skill="HTML">
+                    <svg class="circle-progress" width="150" height="150" viewBox="0 0 150 150">
+                        <circle class="circle-bg" cx="75" cy="75" r="70"></circle>
+                        <circle class="circle-fill" cx="75" cy="75" r="70"></circle>
+                    </svg>
+                    <div class="skill-info">
+                        <span class="skill-name">HTML</span>
+                        <span class="skill-percentage">90%</span>
+                    </div>
+                </div>
+                <!-- Repeat for other skills -->
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2 class="section-title">My Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>File Beam</h3>
+                        <p>FileBeam was born out of my frustration with existing file sharing solutions that compromised either on security or usability. As a passionate developer and security enthusiast, I set out to create a platform that offers the best of both worlds.                        </p>
+                        <a href="#" class="project-link">View Project</a>
+                    </div>
+                    <div class="project-image" style="background-image: url('/assets/proj1.jpg');"></div>
+                </div>
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>Inno Scribe</h3>
+                        <p>Revolutionize Your Writing with AI
+                            Unleash creativity and boost productivity with InnoScribe's intelligent writing assistant</p>
+                        <a href="#" class="project-link">View Project</a>
+                    </div>
+                    <div class="project-image" style="background-image: url('/assets/Proj2.png');"></div>
+                </div>
+                <!-- Repeat for other projects -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-links">
+                    <a href="https://github.com/shiva4004/" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/shiva-yadav-573791312/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://discord.com/users/1083614122815524956" target="_blank"><i class="fab fa-discord"></i></a>
+                    <a href="https://www.instagram.com/shivathegamedev/" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p>&copy; 2024 Shiva. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

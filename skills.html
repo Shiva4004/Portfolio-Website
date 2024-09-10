@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Skills - Shiva</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+</head>
+<body>
+    <div id="cursor"></div>
+    <div id="cursor-blur"></div>
+
+    <header>
+        <nav>
+            <div class="logo">Shiva</div>
+            <ul>
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="skills.html" class="nav-link">Skills</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <i class="fas fa-moon"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="skills">
+            <h1 class="section-title">My Skills</h1>
+            <div class="skills-container">
+                <div class="skill-item" data-skill="HTML">
+                    <svg class="circle-progress" width="150" height="150" viewBox="0 0 150 150">
+                        <circle class="circle-bg" cx="75" cy="75" r="70"></circle>
+                        <circle class="circle-fill" cx="75" cy="75" r="70"></circle>
+                    </svg>
+                    <div class="skill-info">
+                        <span class="skill-name">HTML</span>
+                        <span class="skill-percentage">90%</span>
+                    </div>
+                </div>
+                <div class="skill-item" data-skill="CSS">
+                    <svg class="circle-progress" width="150" height="150" viewBox="0 0 150 150">
+                        <circle class="circle-bg" cx="75" cy="75" r="70"></circle>
+                        <circle class="circle-fill" cx="75" cy="75" r="70"></circle>
+                    </svg>
+                    <div class="skill-info">
+                        <span class="skill-name">CSS</span>
+                        <span class="skill-percentage">85%</span>
+                    </div>
+                </div>
+                <div class="skill-item" data-skill="JavaScript">
+                    <svg class="circle-progress" width="150" height="150" viewBox="0 0 150 150">
+                        <circle class="circle-bg" cx="75" cy="75" r="70"></circle>
+                        <circle class="circle-fill" cx="75" cy="75" r="70"></circle>
+                    </svg>
+                    <div class="skill-info">
+                        <span class="skill-name">JavaScript</span>
+                        <span class="skill-percentage">80%</span>
+                    </div>
+                </div>
+                <!-- Add more skill items as needed -->
+            </div>
+            <div class="skills-description">
+                <h2>My Expertise</h2>
+                <p>With a strong foundation in front-end technologies, I specialize in creating responsive and interactive web experiences. My skills include:</p>
+                <ul>
+                    <li>HTML5, CSS3, and modern CSS frameworks</li>
+                    <li>JavaScript (ES6+) and popular libraries/frameworks like React</li>
+                    <li>Responsive web design and mobile-first approach</li>
+                    <li>Version control with Git</li>
+                    <li>Backend basics with Node.js and Express</li>
+                    <li>Database management with MongoDB and MySQL</li>
+                    <li>RESTful API design and implementation</li>
+                    <li>Web performance optimization</li>
+                    <li>Basic understanding of UI/UX principles</li>
+                </ul>
+                <p>I'm always eager to learn new technologies and improve my skills to stay up-to-date with the latest web development trends.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-links">
+                    <a href="https://github.com/shiva4004/" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/shiva-yadav-573791312/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://discord.com/users/1083614122815524956" target="_blank"><i class="fab fa-discord"></i></a>
+                    <a href="https://www.instagram.com/shivathegamedev/" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p>&copy; 2024 Shiva. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="firebase-config.js"></script>
+    <script src="skills.js"></script>
+</body>
+</html>

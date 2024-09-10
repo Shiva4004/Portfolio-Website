@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Shiva</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+</head>
+<body>
+    <div id="cursor"></div>
+    <div id="cursor-blur"></div>
+
+    <header>
+        <nav>
+            <div class="logo">Shiva</div>
+            <ul>
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="skills.html" class="nav-link">Skills</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <i class="fas fa-moon"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h1 class="section-title">About Me</h1>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Welcome! I'm Shiva4004, a versatile developer skilled in Android, Angular, and web development technologies like HTML5, CSS3, Bootstrap, and JavaScript. I excel at creating responsive, user-friendly interfaces.</p>
+                    <p>On the backend, I work with databases like MariaDB, MongoDB, MSSQL, and MySQL, and I have experience in server configuration with Nginx. I also develop with Node.js, PHP, and Python.</p>
+                    <p>In mobile development, I'm proficient in Java, Kotlin, and React Native. I integrate Firebase services and use Git and Postman for version control and API testing.</p>
+                    <p>I also explore game development with Unity and Unreal Engine. I'm always eager to learn and take on new challenges. Let's create something amazing together!</p>
+                    <p><strong>Tools & Technologies:</strong> Android, Angular, Bootstrap, Java, JavaScript, Python, Unity, and more.</p>
+                </div>                
+            </div>
+            <div class="about-stats">
+                <div class="stat">
+                    <span class="stat-number" data-target="5">0</span>
+                    <span class="stat-label">Projects Completed</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-target="1">0</span>
+                    <span class="stat-label">Happy Clients</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-target="8">0</span>
+                    <span class="stat-label">Years Experience</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-links">
+                    <a href="https://github.com/shiva4004/" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/shiva-yadav-573791312/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://discord.com/users/1083614122815524956" target="_blank"><i class="fab fa-discord"></i></a>
+                    <a href="https://www.instagram.com/shivathegamedev/" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p>&copy; 2024 Shiva. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="firebase-config.js"></script>
+    <script src="about.js"></script>
+</body>
+</html>
